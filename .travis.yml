@@ -1,5 +1,10 @@
+language: ruby
+rvm:
+  - 2.3.3
+
 script:
-  - rake
+  - bundle exec jekyll build
+
 deploy:
   provider: pages
   skip-cleanup: true
